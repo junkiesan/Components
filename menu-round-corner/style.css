@@ -9,3 +9,61 @@ body {
   background: #333;
   height: 100vh;
   font-family: Roboto, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 200px;
+  padding-top: 125px;
+}
+
+h1 + p {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  position: relative;
+  top: -35px;
+}
+
+.container-corner {
+  position: absolute;
+  right: 40px;
+  left: 40px;
+}
+
+.btn-circle {
+  background: rgb(78, 76, 221);
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 15;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #fff;
+}
+
+.line {
+  width: 50%;
+  height: 3px;
+  background: #fff;
+  transition: 
+  transform 0.2s ease,
+  opacity 0.2s ease,
+  top 0.2s ease;
+  position: relative;
+}
+
+.line:nth-child(1){
+  top: -10px;
+}
+
+.line:nth-child(3){
+  top: -10px;
+}
